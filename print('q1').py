@@ -1,9 +1,10 @@
-a, b = map(int,input().split())
+def card_conv(x:int, y:int) -> str:
+    d=''
 
+    dchar = '0123456789abcdefghijklmnopqrspuvwxyz'
 
+    while x > 0:
+        d += dchar[x%y]
+        x //=y
 
-print(a+b)
-print(a-b)
-print(a*b)
-print(a/b)
-print(a%b)
+    return d[::-1]
