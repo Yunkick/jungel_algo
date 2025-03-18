@@ -1,10 +1,6 @@
-def card_conv(x:int, y:int) -> str:
-    d=''
+a = int(input())
+x = []
+for i in range (a):
+    x.append(int(input()))
 
-    dchar = '0123456789abcdefghijklmnopqrspuvwxyz'
-
-    while x > 0:
-        d += dchar[x%y]
-        x //=y
-
-    return d[::-1]
+print(sorted(x))
