@@ -4,6 +4,7 @@ total_score = 0
 current_score = 0
 for i in range (n):
     text = input()
+    current_score = 0
     total_score = 0
     for c in text:
         if c == ('O'):
